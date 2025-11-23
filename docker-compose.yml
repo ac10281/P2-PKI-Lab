@@ -3,26 +3,26 @@ services:
     build: ./server_tls
     hostname: server_tls
     container_name: server_tls
-    volumes:
-      - ./server1-pki:/etc/easy-rsa
     networks:
-      - pki-net
+      pki-net:
+        ipv4_address: 172.20.0.3
+
 
   server_mtls:
     build: ./server_mtls
     hostname: server_mtls
     container_name: server_mtls
-    volumes:
-      - ./server2-pki:/etc/easy-rsa
     networks:
-      - pki-net
+      pki-net:
+        ipv4_address: 172.20.0.4
 
   client:
     build: ./client
     hostname: client
     container_name: client
     networks:
-      - pki-net
+      pki-net:
+        ipv4_address: 172.20.0.2
     # Next two settings keep container running, necessary for Wireshark capture
     stdin_open: true
     tty: true
@@ -31,4 +31,7 @@ services:
 networks:
   pki-net:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
 
