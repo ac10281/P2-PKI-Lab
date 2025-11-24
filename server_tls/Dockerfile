@@ -1,8 +1,9 @@
 FROM nginx:alpine
 
 RUN apk update && \
-    apk add --no-cache easy-rsa
+    apk add --no-cache openssl easy-rsa
 
 COPY index.html /usr/share/nginx/html/index.html
+COPY default.conf /etc/nginx/conf.d/
 
-WORKDIR /etc/easy-rsa
+EXPOSE 443

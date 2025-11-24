@@ -3,10 +3,11 @@ services:
     build: ./server_tls
     hostname: server_tls
     container_name: server_tls
+    volumes:
+      - ./pki_files/server_tls:/etc/nginx/certs:rw
     networks:
       pki-net:
         ipv4_address: 172.20.0.3
-
 
   server_mtls:
     build: ./server_mtls
@@ -20,6 +21,9 @@ services:
     build: ./client
     hostname: client
     container_name: client
+    volumes:
+      - ./pki_files/server_tls/server_tls_ecc.crt:/root/server_tls_ecc.crt:ro
+      - ./pki_files/server_tls/server_tls_ecc.key:/root/server_tls_ecc.key:ro
     networks:
       pki-net:
         ipv4_address: 172.20.0.2
@@ -27,7 +31,6 @@ services:
     stdin_open: true
     tty: true
     
-
 networks:
   pki-net:
     driver: bridge
