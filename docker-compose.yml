@@ -21,9 +21,12 @@ services:
     build: ./client
     hostname: client
     container_name: client
+    environment:
+      - SSLKEYLOGFILE=/keylog/sslkeylog.log
     volumes:
       - ./pki_files/server_tls/server_tls_ecc.crt:/root/server_tls_ecc.crt:ro
       - ./pki_files/server_tls/server_tls_ecc.key:/root/server_tls_ecc.key:ro
+      - ./keylog:/keylog:rw
     networks:
       pki-net:
         ipv4_address: 172.20.0.2
@@ -37,4 +40,3 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/24
-
