@@ -1,0 +1,58 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            15:ea:43:4d:2a:e9:99:4b:36:93:e0:d2:71:f3:ae:5e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=server_mtls
+        Validity
+            Not Before: Nov 29 02:23:24 2025 GMT
+            Not After : Mar  3 02:23:24 2028 GMT
+        Subject: CN=server_mtls
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:ac:7a:fe:2e:d0:07:d2:6e:e4:e4:c6:74:e2:4b:
+                    59:fa:96:26:a6:e9:e5:75:73:a2:c0:14:81:af:95:
+                    37:8c:d8:db:7d:0e:3a:1f:6a:13:65:71:b3:f1:50:
+                    6a:53:0c:7a:17:f1:a7:39:ef:f7:68:dd:a5:af:d6:
+                    09:ec:3a:76:82:7d:55:51:d2:69:c1:25:21:1e:de:
+                    be:41:f3:0e:d4:d7:b6:c8:4c:dc:c6:92:dd:68:f8:
+                    41:43:55:c4:e8:ff:98
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                B0:63:5A:EB:E2:DE:38:9A:30:83:57:EF:F8:08:E1:94:D6:87:EF:9C
+            X509v3 Authority Key Identifier: 
+                keyid:88:54:EC:D8:C8:2D:10:99:38:F7:29:23:D7:78:E0:8C:90:77:AB:B4
+                DirName:/CN=server_mtls
+                serial:03:C2:6B:3E:D8:E1:9B:12:6F:57:A0:C8:B0:D3:3A:3B:16:E3:90:73
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:65:02:31:00:c2:db:66:89:d0:9d:26:33:67:f9:77:ed:93:
+        b7:4f:2f:8f:c6:05:47:91:c8:9d:b6:6c:b7:5b:e6:43:67:56:
+        9a:0a:02:72:70:dc:94:7c:a3:01:25:e8:e7:29:f2:bc:84:02:
+        30:5e:22:e0:bd:9d:22:99:b5:b1:24:c5:c8:e3:1d:30:f6:80:
+        8a:66:d1:5b:ff:f7:14:83:a5:34:b4:d2:48:ae:a4:4b:b9:50:
+        65:db:8d:48:1d:55:a5:93:4a:86:dc:00:0a
+-----BEGIN CERTIFICATE-----
+MIICCjCCAZCgAwIBAgIQFepDTSrpmUs2k+DScfOuXjAKBggqhkjOPQQDAjAWMRQw
+EgYDVQQDDAtzZXJ2ZXJfbXRsczAeFw0yNTExMjkwMjIzMjRaFw0yODAzMDMwMjIz
+MjRaMBYxFDASBgNVBAMMC3NlcnZlcl9tdGxzMHYwEAYHKoZIzj0CAQYFK4EEACID
+YgAErHr+LtAH0m7k5MZ04ktZ+pYmpunldXOiwBSBr5U3jNjbfQ46H2oTZXGz8VBq
+Uwx6F/GnOe/3aN2lr9YJ7Dp2gn1VUdJpwSUhHt6+QfMO1Ne2yEzcxpLdaPhBQ1XE
+6P+Yo4GiMIGfMAkGA1UdEwQCMAAwHQYDVR0OBBYEFLBjWuvi3jiaMINX7/gI4ZTW
+h++cMFEGA1UdIwRKMEiAFIhU7NjILRCZOPcpI9d44IyQd6u0oRqkGDAWMRQwEgYD
+VQQDDAtzZXJ2ZXJfbXRsc4IUA8JrPtjhmxJvV6DIsNM6OxbjkHMwEwYDVR0lBAww
+CgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMAoGCCqGSM49BAMCA2gAMGUCMQDC22aJ
+0J0mM2f5d+2Tt08vj8YFR5HInbZst1vmQ2dWmgoCcnDclHyjASXo5ynyvIQCMF4i
+4L2dIpm1sSTFyOMdMPaAimbRW//3FIOlNLTSSK6kS7lQZduNSB1VpZNKhtwACg==
+-----END CERTIFICATE-----

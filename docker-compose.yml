@@ -13,6 +13,8 @@ services:
     build: ./server_mtls
     hostname: server_mtls
     container_name: server_mtls
+    volumes:
+     - ./pki_files/server_mtls/:/etc/easy-rsa/pki/:rw
     networks:
       pki-net:
         ipv4_address: 172.20.0.4
@@ -26,6 +28,9 @@ services:
     volumes:
       - ./pki_files/server_tls/server_tls_ecc.crt:/root/server_tls_ecc.crt:ro
       - ./pki_files/server_tls/server_tls_ecc.key:/root/server_tls_ecc.key:ro
+      - ./pki_files/server_mtls/ca.crt:/root/ca.crt:ro
+      - ./pki_files/server_mtls/issued/client.crt:/root/client.crt:ro
+      - ./pki_files/server_mtls/private/client.key:/root/client.key:ro
       - ./keylog:/keylog:rw
     networks:
       pki-net:
