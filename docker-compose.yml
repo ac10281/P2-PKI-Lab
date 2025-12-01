@@ -31,6 +31,8 @@ services:
       - ./pki_files/client/ca.crt:/root/ca.crt:ro
       - ./pki_files/client/client.crt:/root/client.crt:ro
       - ./pki_files/client/client.key:/root/client.key:ro
+      - ./pki_files/client/new_client.crt:/root/new_client.crt:ro
+      - ./pki_files/client/new_client.key:/root/new_client.key:ro
       - ./keylog:/keylog:rw
     networks:
       pki-net:

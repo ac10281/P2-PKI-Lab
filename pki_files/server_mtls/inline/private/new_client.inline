@@ -1,0 +1,95 @@
+# Easy-RSA Inline file
+# Certificate type: client
+# commonName: server_mtls
+# SHA256 fingerprint:
+# A9:8B:13:52:7F:93:60:8B:4D:07:51:E9:F9:10:CD:F4:91:C8:BC:4A:05:6D:BF:1A:AB:08:3A:B3:55:A0:92:06
+# Decimal serial number: 119720864006539885024540888613546833992
+
+<cert>
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            5a:11:66:52:76:f3:62:99:54:ae:ea:1d:c5:03:38:48
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=server_mtls
+        Validity
+            Not Before: Dec  1 04:49:55 2025 GMT
+            Not After : Mar  5 04:49:55 2028 GMT
+        Subject: CN=server_mtls
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:cd:3d:ee:bd:74:01:21:1f:5c:32:80:53:a5:c4:
+                    bc:0f:db:6e:bf:34:b8:f2:18:bd:ff:b8:5c:c6:1a:
+                    01:a2:2e:1c:21:30:c6:d0:25:3e:77:94:1d:54:9b:
+                    26:cb:cf:f8:c5:b9:c5:93:39:79:8e:17:b2:f9:b5:
+                    5e:ec:0c:32:19:cb:69:38:28:53:a9:6d:b1:ce:96:
+                    12:e1:8a:b7:d3:e5:22:f9:90:92:c3:0f:9a:14:cd:
+                    59:18:5f:b1:02:58:5e
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                D1:93:FE:CE:9C:D2:FA:03:72:0A:C1:AE:0B:26:5F:42:4D:DD:6D:61
+            X509v3 Authority Key Identifier: 
+                keyid:88:54:EC:D8:C8:2D:10:99:38:F7:29:23:D7:78:E0:8C:90:77:AB:B4
+                DirName:/CN=server_mtls
+                serial:03:C2:6B:3E:D8:E1:9B:12:6F:57:A0:C8:B0:D3:3A:3B:16:E3:90:73
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:66:02:31:00:f6:f0:ab:f1:82:90:05:4b:02:55:4f:ee:77:
+        84:6b:d0:dd:07:c8:13:d1:18:34:e8:4e:22:d0:23:94:d9:ef:
+        51:f4:d4:6f:4c:17:bb:42:47:ad:91:1d:2e:0d:2d:4b:8a:02:
+        31:00:e9:10:76:74:18:ad:c9:e4:6c:14:fd:5a:d8:cf:72:0e:
+        a8:be:c5:68:c2:e5:a4:35:d7:ca:ed:bf:ed:7c:9a:0b:1e:5c:
+        93:98:73:45:6e:f3:c5:93:be:53:27:df:54:ed
+-----BEGIN CERTIFICATE-----
+MIICCzCCAZCgAwIBAgIQWhFmUnbzYplUruodxQM4SDAKBggqhkjOPQQDAjAWMRQw
+EgYDVQQDDAtzZXJ2ZXJfbXRsczAeFw0yNTEyMDEwNDQ5NTVaFw0yODAzMDUwNDQ5
+NTVaMBYxFDASBgNVBAMMC3NlcnZlcl9tdGxzMHYwEAYHKoZIzj0CAQYFK4EEACID
+YgAEzT3uvXQBIR9cMoBTpcS8D9tuvzS48hi9/7hcxhoBoi4cITDG0CU+d5QdVJsm
+y8/4xbnFkzl5jhey+bVe7AwyGctpOChTqW2xzpYS4Yq30+Ui+ZCSww+aFM1ZGF+x
+Alheo4GiMIGfMAkGA1UdEwQCMAAwHQYDVR0OBBYEFNGT/s6c0voDcgrBrgsmX0JN
+3W1hMFEGA1UdIwRKMEiAFIhU7NjILRCZOPcpI9d44IyQd6u0oRqkGDAWMRQwEgYD
+VQQDDAtzZXJ2ZXJfbXRsc4IUA8JrPtjhmxJvV6DIsNM6OxbjkHMwEwYDVR0lBAww
+CgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMAoGCCqGSM49BAMCA2kAMGYCMQD28Kvx
+gpAFSwJVT+53hGvQ3QfIE9EYNOhOItAjlNnvUfTUb0wXu0JHrZEdLg0tS4oCMQDp
+EHZ0GK3J5GwU/VrYz3IOqL7FaMLlpDXXyu2/7XyaCx5ck5hzRW7zxZO+UyffVO0=
+-----END CERTIFICATE-----
+</cert>
+
+<key>
+-----BEGIN PRIVATE KEY-----
+MIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDBEjQ5JhRi6r/EsLvtL
+0IyIJMpWxEO1iP2522OCOQjpOv/rOWQUbUD1wK5ebpxxqz6hZANiAATNPe69dAEh
+H1wygFOlxLwP226/NLjyGL3/uFzGGgGiLhwhMMbQJT53lB1UmybLz/jFucWTOXmO
+F7L5tV7sDDIZy2k4KFOpbbHOlhLhirfT5SL5kJLDD5oUzVkYX7ECWF4=
+-----END PRIVATE KEY-----
+</key>
+
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAYKgAwIBAgIUA8JrPtjhmxJvV6DIsNM6OxbjkHMwCgYIKoZIzj0EAwIw
+FjEUMBIGA1UEAwwLc2VydmVyX210bHMwHhcNMjUxMTI5MDIxMTIxWhcNMzUxMTI3
+MDIxMTIxWjAWMRQwEgYDVQQDDAtzZXJ2ZXJfbXRsczB2MBAGByqGSM49AgEGBSuB
+BAAiA2IABGujueW1ABh/ZzJulwLD6xHEUAITswM2zLR/hxBHJSGw7p+Juf/vqqff
+2LIL1e1GcTEg9J1UaxppYm0347rcOxX8qn6K7tpXo5m9cAgsQDRU8eUWFQvzHePk
+aQh3bQJucKOBkDCBjTAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBSIVOzYyC0QmTj3
+KSPXeOCMkHertDBRBgNVHSMESjBIgBSIVOzYyC0QmTj3KSPXeOCMkHertKEapBgw
+FjEUMBIGA1UEAwwLc2VydmVyX210bHOCFAPCaz7Y4ZsSb1egyLDTOjsW45BzMAsG
+A1UdDwQEAwIBBjAKBggqhkjOPQQDAgNoADBlAjAt+G8/RvJAK1azc4bPMjP++M9I
+x6sVQ6dLY++X2OqpVWMVRFDsfbs7ZKBPJV4kYCsCMQCS4DLdw7SpCisihJMoL4XE
+TuXjVciMrthXQ8T4yhK/HiMQuY3YmiCGlZHkwOt+4UM=
+-----END CERTIFICATE-----
+</ca>
+
+# Easy-RSA TLS Key not found!
+
